@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lemonyliu.mapper.ReportMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lemonyliu.entity.Report">
+        <id column="id" property="id" />
+        <result column="cid" property="cid" />
+        <result column="uid" property="uid" />
+        <result column="access" property="access" />
+        <result column="title" property="title" />
+        <result column="description" property="description" />
+        <result column="create_time" property="createTime" />
+        <result column="last_update_time" property="lastUpdateTime" />
+        <result column="version" property="version" />
+        <result column="size" property="size" />
+        <result column="del_flag" property="delFlag" />
+        <result column="path" property="path" />
+        <result column="cid0" property="cid0" />
+        <result column="version_lock" property="versionLock" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, cid, uid, access, title, description, create_time, last_update_time, version, size, del_flag, path, cid0, version_lock
+    </sql>
+
+</mapper>

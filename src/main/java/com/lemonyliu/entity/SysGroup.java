@@ -1,0 +1,56 @@
+package com.lemonyliu.entity;
+
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+import com.baomidou.mybatisplus.annotation.TableId;
+
+import java.time.LocalDateTime;
+
+import com.baomidou.mybatisplus.annotation.TableField;
+
+import java.io.Serializable;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+/**
+ * <p>
+ *
+ * </p>
+ *
+ * @author ${author}
+ * @since 2022-05-15
+ */
+@Data
+@EqualsAndHashCode(callSuper = false)
+@TableName("sys_group")
+@ApiModel(value = "SysGroup对象", description = "")
+public class SysGroup extends Model<SysGroup> {
+
+    private static final long serialVersionUID = 1L;
+
+    @TableId(value = "id", type = IdType.AUTO)
+    private Long id;
+
+    @TableField("name")
+    private String name;
+
+    @TableField("description")
+    private String description;
+
+    @TableField("last_update_time")
+    private LocalDateTime lastUpdateTime;
+
+    @TableField("is_exclusive")
+    private Boolean isExclusive;
+
+
+    @Override
+    protected Serializable pkVal() {
+        return this.id;
+    }
+
+}
