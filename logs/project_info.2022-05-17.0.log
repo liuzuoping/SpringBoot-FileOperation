@@ -1,0 +1,178 @@
+2022-05-17 11:28:25.849 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : Starting SpringbootFileApplication using Java 1.8.0_144 on DESKTOP-TMGJV85 with PID 19276 (C:\Users\MI\Desktop\mycodefile\springboot-file\springboot-file\target\classes started by MI in C:\Users\MI\Desktop\mycodefile\springboot-file\springboot-file)
+2022-05-17 11:28:25.848 INFO  --- [kground-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2022-05-17 11:28:25.851 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : No active profile set, falling back to default profiles: default
+2022-05-17 11:28:25.908 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-17 11:28:25.908 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-17 11:28:27.421 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-17 11:28:27.431 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9090"]
+2022-05-17 11:28:27.431 INFO  --- [  restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-05-17 11:28:27.432 INFO  --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-05-17 11:28:27.434 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-05-17 11:28:27.434 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2022-05-17 11:28:27.434 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-05-17 11:28:27.434 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-05-17 11:28:27.437 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2022-05-17 11:28:27.501 INFO  --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-17 11:28:27.502 INFO  --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1593 ms
+2022-05-17 11:28:27.782 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.CategoryGroupAccess".
+2022-05-17 11:28:27.875 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.GroupUser".
+2022-05-17 11:28:27.896 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.ReportGroupAccess".
+2022-05-17 11:28:28.778 INFO  --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-17 11:28:28.983 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9090"]
+2022-05-17 11:28:28.998 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-17 11:28:29.234 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : Started SpringbootFileApplication in 3.88 seconds (JVM running for 5.059)
+2022-05-17 11:28:34.871 INFO  --- [nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-17 11:28:34.871 INFO  --- [nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-17 11:28:34.873 INFO  --- [nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-17 11:28:34.972 INFO  --- [nio-9090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-17 11:28:34.973 WARN  --- [nio-9090-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-17 11:28:35.474 INFO  --- [nio-9090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-17 11:28:35.481 DEBUG --- [nio-9090-exec-2] c.l.mapper.ReportMapper.selectTitleList  : ==>  Preparing: select title from report where uid = ?
+2022-05-17 11:28:35.503 DEBUG --- [nio-9090-exec-2] c.l.mapper.ReportMapper.selectTitleList  : ==> Parameters: zuoping.liu(String)
+2022-05-17 11:28:35.523 DEBUG --- [nio-9090-exec-2] c.l.mapper.ReportMapper.selectTitleList  : <==      Total: 11
+2022-05-17 11:28:35.535 DEBUG --- [nio-9090-exec-2] c.l.mapper.ReportMapper.selectTitleList  : ==>  Preparing: select title from report where uid = ?
+2022-05-17 11:28:35.536 DEBUG --- [nio-9090-exec-2] c.l.mapper.ReportMapper.selectTitleList  : ==> Parameters: zuoping.liu(String)
+2022-05-17 11:28:35.537 DEBUG --- [nio-9090-exec-2] c.l.mapper.ReportMapper.selectTitleList  : <==      Total: 11
+2022-05-17 11:28:35.561 DEBUG --- [nio-9090-exec-2] com.lemonyliu.mapper.ReportMapper.insert : ==>  Preparing: INSERT INTO report ( uid, title, create_time, last_update_time, size, del_flag, path, cid0, version_lock ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2022-05-17 11:28:35.566 DEBUG --- [nio-9090-exec-2] com.lemonyliu.mapper.ReportMapper.insert : ==> Parameters: zuoping.liu(String), Java(11).pdf(String), 2022-05-17T11:28:35.540(LocalDateTime), 2022-05-17T11:28:35.540(LocalDateTime), 1.41M(String), false(Boolean), Java(11).pdf(String), 191(Long), 0(Integer)
+2022-05-17 11:28:35.635 DEBUG --- [nio-9090-exec-2] com.lemonyliu.mapper.ReportMapper.insert : <==    Updates: 1
+2022-05-17 11:29:04.811 WARN  --- [nio-9090-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.io.FileNotFoundException: URL [file:/C:/Users/MI/Desktop/myalgorithm/Java(10).pdf] cannot be resolved in the file system for checking its content length]
+2022-05-17 11:29:09.414 WARN  --- [nio-9090-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.io.FileNotFoundException: URL [file:/C:/Users/MI/Desktop/myalgorithm/Java(10).pdf] cannot be resolved in the file system for checking its content length]
+2022-05-17 11:29:46.273 DEBUG --- [nio-9090-exec-7] c.l.m.ReportMapper.selectReportPathById  : ==>  Preparing: select path from report where id = ?
+2022-05-17 11:29:46.274 DEBUG --- [nio-9090-exec-7] c.l.m.ReportMapper.selectReportPathById  : ==> Parameters: 896(Long)
+2022-05-17 11:29:46.275 DEBUG --- [nio-9090-exec-7] c.l.m.ReportMapper.selectReportPathById  : <==      Total: 1
+2022-05-17 11:29:46.276 DEBUG --- [nio-9090-exec-7] c.l.m.ReportMapper.selectReportTitleById : ==>  Preparing: select title from report where id = ?
+2022-05-17 11:29:46.277 DEBUG --- [nio-9090-exec-7] c.l.m.ReportMapper.selectReportTitleById : ==> Parameters: 896(Long)
+2022-05-17 11:29:46.278 DEBUG --- [nio-9090-exec-7] c.l.m.ReportMapper.selectReportTitleById : <==      Total: 1
+2022-05-17 11:30:05.331 DEBUG --- [nio-9090-exec-8] c.l.m.ReportMapper.selectReportPathById  : ==>  Preparing: select path from report where id = ?
+2022-05-17 11:30:05.332 DEBUG --- [nio-9090-exec-8] c.l.m.ReportMapper.selectReportPathById  : ==> Parameters: 897(Long)
+2022-05-17 11:30:05.332 DEBUG --- [nio-9090-exec-8] c.l.m.ReportMapper.selectReportPathById  : <==      Total: 1
+2022-05-17 11:30:05.333 DEBUG --- [nio-9090-exec-8] c.l.m.ReportMapper.selectReportTitleById : ==>  Preparing: select title from report where id = ?
+2022-05-17 11:30:05.333 DEBUG --- [nio-9090-exec-8] c.l.m.ReportMapper.selectReportTitleById : ==> Parameters: 897(Long)
+2022-05-17 11:30:05.334 DEBUG --- [nio-9090-exec-8] c.l.m.ReportMapper.selectReportTitleById : <==      Total: 1
+2022-05-17 11:40:06.664 INFO  --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-17 11:40:06.672 INFO  --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-17 11:40:14.915 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : Starting SpringbootFileApplication using Java 1.8.0_144 on DESKTOP-TMGJV85 with PID 22896 (C:\Users\MI\Desktop\mycodefile\springboot-file\springboot-file\target\classes started by MI in C:\Users\MI\Desktop\mycodefile\springboot-file\springboot-file)
+2022-05-17 11:40:14.913 INFO  --- [kground-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2022-05-17 11:40:14.916 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : No active profile set, falling back to default profiles: default
+2022-05-17 11:40:14.963 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-17 11:40:14.964 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-17 11:40:16.342 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-17 11:40:16.349 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9090"]
+2022-05-17 11:40:16.350 INFO  --- [  restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-05-17 11:40:16.350 INFO  --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-05-17 11:40:16.352 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-05-17 11:40:16.352 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2022-05-17 11:40:16.352 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-05-17 11:40:16.352 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-05-17 11:40:16.355 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2022-05-17 11:40:16.461 INFO  --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-17 11:40:16.461 INFO  --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1497 ms
+2022-05-17 11:40:16.699 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.CategoryGroupAccess".
+2022-05-17 11:40:16.784 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.GroupUser".
+2022-05-17 11:40:16.804 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.ReportGroupAccess".
+2022-05-17 11:40:17.670 INFO  --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-17 11:40:17.836 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9090"]
+2022-05-17 11:40:17.849 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-17 11:40:18.036 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : Started SpringbootFileApplication in 3.586 seconds (JVM running for 4.522)
+2022-05-17 11:40:51.011 INFO  --- [nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-17 11:40:51.011 INFO  --- [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-17 11:40:51.013 INFO  --- [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-17 12:40:10.540 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : Starting SpringbootFileApplication using Java 1.8.0_144 on DESKTOP-TMGJV85 with PID 22896 (C:\Users\MI\Desktop\mycodefile\springboot-file\springboot-file\target\classes started by MI in C:\Users\MI\Desktop\mycodefile\springboot-file\springboot-file)
+2022-05-17 12:40:10.540 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : No active profile set, falling back to default profiles: default
+2022-05-17 12:40:10.898 WARN  --- [  restartedMain] o.m.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.lemonyliu.mapper]' package. Please check your configuration.
+2022-05-17 12:40:10.970 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-17 12:40:10.971 INFO  --- [  restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-05-17 12:40:10.971 INFO  --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-05-17 12:40:10.971 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-05-17 12:40:10.971 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2022-05-17 12:40:10.971 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-05-17 12:40:10.971 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-05-17 12:40:10.972 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2022-05-17 12:40:10.990 INFO  --- [  restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-17 12:40:10.990 INFO  --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 447 ms
+2022-05-17 12:40:11.104 INFO  --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-17 12:40:11.165 WARN  --- [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\MI\Desktop\mycodefile\springboot-file\springboot-file\target\classes\mapper\CategoryGroupAccessMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\MI\Desktop\mycodefile\springboot-file\springboot-file\target\classes\mapper\CategoryGroupAccessMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.lemonyliu.entity.CategoryGroupAccess'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.lemonyliu.entity.CategoryGroupAccess
+2022-05-17 12:40:11.166 INFO  --- [  restartedMain] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-05-17 12:40:11.171 INFO  --- [  restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-17 12:43:17.173 INFO  --- [kground-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2022-05-17 12:43:17.173 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : Starting SpringbootFileApplication using Java 1.8.0_144 on DESKTOP-TMGJV85 with PID 13884 (C:\Users\MI\Desktop\mycodefile\springboot-file\springboot-file\target\classes started by MI in C:\Users\MI\Desktop\mycodefile\springboot-file\springboot-file)
+2022-05-17 12:43:17.176 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : No active profile set, falling back to default profiles: default
+2022-05-17 12:43:17.224 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-17 12:43:17.224 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-17 12:43:18.781 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-17 12:43:18.789 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9090"]
+2022-05-17 12:43:18.789 INFO  --- [  restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-05-17 12:43:18.789 INFO  --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-05-17 12:43:18.792 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-05-17 12:43:18.792 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2022-05-17 12:43:18.792 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-05-17 12:43:18.792 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-05-17 12:43:18.796 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2022-05-17 12:43:18.899 INFO  --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-17 12:43:18.899 INFO  --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1674 ms
+2022-05-17 12:43:19.128 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.CategoryGroupAccess".
+2022-05-17 12:43:19.216 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.GroupUser".
+2022-05-17 12:43:19.240 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.ReportGroupAccess".
+2022-05-17 12:43:20.086 INFO  --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-17 12:43:20.250 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9090"]
+2022-05-17 12:43:20.263 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-17 12:43:20.453 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : Started SpringbootFileApplication in 3.67 seconds (JVM running for 4.868)
+2022-05-17 12:43:56.010 INFO  --- [nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-17 12:43:56.010 INFO  --- [nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-17 12:43:56.012 INFO  --- [nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-17 12:43:58.872 INFO  --- [nio-9090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-17 12:43:58.874 WARN  --- [nio-9090-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-17 12:43:59.007 INFO  --- [nio-9090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-17 12:43:59.013 DEBUG --- [nio-9090-exec-2] com.lemonyliu.mapper.ReportMapper.insert : ==>  Preparing: INSERT INTO report ( uid, title, create_time, last_update_time, size, del_flag, path, cid0, version_lock ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2022-05-17 12:43:59.040 DEBUG --- [nio-9090-exec-2] com.lemonyliu.mapper.ReportMapper.insert : ==> Parameters: zuoping.liu(String), Java.pdf(String), 2022-05-17T12:43:58.836(LocalDateTime), 2022-05-17T12:43:58.836(LocalDateTime), 1.41M(String), false(Boolean), trms-file/2022-05/55496B5752F646318A919B5AEA4F3BA3_Java.pdf(String), 191(Long), 0(Integer)
+2022-05-17 12:43:59.122 DEBUG --- [nio-9090-exec-2] com.lemonyliu.mapper.ReportMapper.insert : <==    Updates: 1
+2022-05-17 12:45:39.212 DEBUG --- [nio-9090-exec-5] c.l.mapper.ReportMapper.selectById       : ==>  Preparing: SELECT id,cid,uid,access,title,description,create_time,last_update_time,version,size,del_flag,path,cid0,version_lock FROM report WHERE id=?
+2022-05-17 12:45:39.212 DEBUG --- [nio-9090-exec-5] c.l.mapper.ReportMapper.selectById       : ==> Parameters: 898(Long)
+2022-05-17 12:45:39.224 DEBUG --- [nio-9090-exec-5] c.l.mapper.ReportMapper.selectById       : <==      Total: 1
+2022-05-17 12:46:23.955 DEBUG --- [nio-9090-exec-2] c.l.mapper.ReportMapper.selectById       : ==>  Preparing: SELECT id,cid,uid,access,title,description,create_time,last_update_time,version,size,del_flag,path,cid0,version_lock FROM report WHERE id=?
+2022-05-17 12:46:23.956 DEBUG --- [nio-9090-exec-2] c.l.mapper.ReportMapper.selectById       : ==> Parameters: 898(Long)
+2022-05-17 12:46:23.957 DEBUG --- [nio-9090-exec-2] c.l.mapper.ReportMapper.selectById       : <==      Total: 1
+2022-05-17 12:46:56.789 DEBUG --- [nio-9090-exec-1] c.l.mapper.ReportMapper.selectById       : ==>  Preparing: SELECT id,cid,uid,access,title,description,create_time,last_update_time,version,size,del_flag,path,cid0,version_lock FROM report WHERE id=?
+2022-05-17 12:46:56.790 DEBUG --- [nio-9090-exec-1] c.l.mapper.ReportMapper.selectById       : ==> Parameters: 898(Long)
+2022-05-17 12:46:56.792 DEBUG --- [nio-9090-exec-1] c.l.mapper.ReportMapper.selectById       : <==      Total: 1
+2022-05-17 12:51:35.411 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : Starting SpringbootFileApplication using Java 1.8.0_144 on DESKTOP-TMGJV85 with PID 24052 (C:\Users\MI\Desktop\myalgorithm\springboot-file\springboot-file\target\classes started by MI in C:\Users\MI\Desktop\myalgorithm\springboot-file\springboot-file)
+2022-05-17 12:51:35.410 INFO  --- [kground-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2022-05-17 12:51:35.414 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : No active profile set, falling back to default profiles: default
+2022-05-17 12:51:35.484 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-17 12:51:35.484 INFO  --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-17 12:51:37.091 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-05-17 12:51:37.099 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-9090"]
+2022-05-17 12:51:37.099 INFO  --- [  restartedMain] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-05-17 12:51:37.099 INFO  --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-05-17 12:51:37.102 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.24] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-05-17 12:51:37.102 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2022-05-17 12:51:37.102 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-05-17 12:51:37.102 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-05-17 12:51:37.105 INFO  --- [  restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2022-05-17 12:51:37.215 INFO  --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-17 12:51:37.215 INFO  --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1730 ms
+2022-05-17 12:51:37.504 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.CategoryGroupAccess".
+2022-05-17 12:51:37.622 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.GroupUser".
+2022-05-17 12:51:37.646 WARN  --- [  restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.lemonyliu.entity.ReportGroupAccess".
+2022-05-17 12:51:38.630 INFO  --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-17 12:51:38.799 INFO  --- [  restartedMain] o.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-9090"]
+2022-05-17 12:51:38.812 INFO  --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-17 12:51:39.007 INFO  --- [  restartedMain] com.lemonyliu.SpringbootFileApplication  : Started SpringbootFileApplication in 4.268 seconds (JVM running for 5.95)
+2022-05-17 12:52:13.305 INFO  --- [nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-17 12:52:13.305 INFO  --- [nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-17 12:52:13.307 INFO  --- [nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-17 12:52:15.879 INFO  --- [nio-9090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-17 12:52:15.880 WARN  --- [nio-9090-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-17 12:52:15.995 INFO  --- [nio-9090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-17 12:52:15.999 DEBUG --- [nio-9090-exec-2] com.lemonyliu.mapper.ReportMapper.insert : ==>  Preparing: INSERT INTO report ( uid, title, create_time, last_update_time, size, del_flag, path, cid0, version_lock ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2022-05-17 12:52:16.025 DEBUG --- [nio-9090-exec-2] com.lemonyliu.mapper.ReportMapper.insert : ==> Parameters: zuoping.liu(String), Java.pdf(String), 2022-05-17T12:52:15.849(LocalDateTime), 2022-05-17T12:52:15.849(LocalDateTime), 1.41M(String), false(Boolean), trms-file/2022-05/9576C6D7520249A483DBDC8B09D7476A_Java.pdf(String), 191(Long), 0(Integer)
+2022-05-17 12:52:16.079 DEBUG --- [nio-9090-exec-2] com.lemonyliu.mapper.ReportMapper.insert : <==    Updates: 1
+2022-05-17 12:53:02.907 DEBUG --- [nio-9090-exec-3] c.l.mapper.ReportMapper.selectById       : ==>  Preparing: SELECT id,cid,uid,access,title,description,create_time,last_update_time,version,size,del_flag,path,cid0,version_lock FROM report WHERE id=?
+2022-05-17 12:53:02.907 DEBUG --- [nio-9090-exec-3] c.l.mapper.ReportMapper.selectById       : ==> Parameters: 899(Long)
+2022-05-17 12:53:02.918 DEBUG --- [nio-9090-exec-3] c.l.mapper.ReportMapper.selectById       : <==      Total: 1
+2022-05-17 12:53:26.995 DEBUG --- [nio-9090-exec-5] c.l.mapper.ReportMapper.selectById       : ==>  Preparing: SELECT id,cid,uid,access,title,description,create_time,last_update_time,version,size,del_flag,path,cid0,version_lock FROM report WHERE id=?
+2022-05-17 12:53:26.995 DEBUG --- [nio-9090-exec-5] c.l.mapper.ReportMapper.selectById       : ==> Parameters: 899(Long)
+2022-05-17 12:53:26.997 DEBUG --- [nio-9090-exec-5] c.l.mapper.ReportMapper.selectById       : <==      Total: 1
