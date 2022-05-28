@@ -15,6 +15,12 @@ swagger:
     name: zuoping.liu
     email: zuoping.liu@163.com
     url:
+oss:
+  endpoint: https://oss-cn-shanghai.aliyuncs.com
+  accessKeyId: your_accessKeyId
+  accessKeySecret: your_accessKeySecret
+  bucketName: your_bucketName
+  baseFolder: your_baseFolder
 
 server:
   port: 9090

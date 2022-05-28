@@ -11,6 +11,7 @@ import com.lemonyliu.util.HttpUtil;
 import com.lemonyliu.util.UUIDUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -31,22 +32,16 @@ public class OssServiceImpl implements OssService {
     @Autowired
     ReportMapper reportMapper;
 
+    @Value("${oss.endpoint}")
     private String endpoint;
+    @Value("${oss.accessKeyId}")
     private String accessKeyId;
+    @Value("${oss.accessKeySecret}")
     private String accessKeySecret;
+    @Value("${oss.bucketName}")
     private String bucketName;
+    @Value("${oss.baseFolder}")
     private String baseFolder;
-
-    @PostConstruct
-    public void init () {
-        this.endpoint = "https://oss-cn-shanghai.aliyuncs.com";
-        //this.victoriaConfig.configs().getProperty("OSS_ENDPOINT");
-        this.accessKeyId = "LTAI5t8Ld9BBLiZC4Pw3R11N";
-        //this.victoriaConfig.configs().getProperty("OSS_KEY_ID");
-        this.accessKeySecret = "Dc2k4l8Et4Vot0HaR9yzRnqkNZHJPQ";
-        this.bucketName = "dragon-wu-2";
-        this.baseFolder = "trms-file";
-    }
 
     @Override
     public String uploadFile (MultipartFile file, String fileName) {
